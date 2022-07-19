@@ -1,35 +1,164 @@
-:root {
-    --background: rgb(224, 234, 247);
-    --header-background: white;
-    --footer-background: rgb(243, 242, 242);
+* {
+    box-sizing: border-box;
+    
 }
 
 body {
-    height: 100vh;
-    font-family: 'Rubik', san-serif;
-    background: var(--background);
     display: grid;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 12% 10% 23% 55%;
+    margin: 0 auto;
+    
 }
+
+/* header, nav, div {
+    border: solid 1px blue;
+} */
 
 header {
-    position: sticky;
-    top: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border: 2px solid gray;
+    font-family: monospace;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+.main-link-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.try-live {
+    margin: 15px;
+    color: blue;
+}
+
+.log-in {
+    margin: 20px;
+    margin-right: 25px;
+    font-weight: lighter;
+}
+
+.blue-text {
+    color: blue;
+}
+
+.nav-link-section {
     display: flex;
     align-items: center;
-    background-color: var(--header-background);
+    margin-left: 40px;
 }
 
-main {
-    padding: 20px;
+.nav-link {
+    margin: 15px;
+    font-family: monospace;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    padding: 7px 20px;
-    font-size: .8em;
+.upgrade {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.live {
     display: flex;
-    justify-content: flex-end;
-    background-color: var(--footer-background);
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    font-size: 60px;
+    font-weight: bold;
 }
+
+.upgrade-prices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px;
+    font-family: monospace;
+    font-size: 15px;
+}
+
+.upgrade-prices p {
+    border: solid 2px gray;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+
+
+.purchase {
+    display: grid;
+    grid-template-columns: 25% 75%;
+}
+
+.description {
+    padding: 30px;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ableton-versions {
+    display: flex;
+    justify-content: space-around;
+}
+
+.version {
+    margin: 20px;
+    padding: 40px;
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: .2em .2em rgba(0, 0, 0, 0.5);
+}
+
+button {
+    font-family: monospace;
+    background-color: blue;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    color: white;
+    box-shadow: .2em .2em rgba(0, 0, 0, 0.5); 
+}
+
+#intro {
+    background-color: rgb(137, 215, 160);
+}
+
+#standard {
+    background-color: aqua; 
+}
+
+#suite {
+    background-color: rgb(31, 26, 26);
+    color: white;
+}
+
+
+
+.purchase-options {
+    border: solid 1px black;
+}
+
+/* .info {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.info div {
+    border: solid 1px black;
+} */
+
+
+
+
